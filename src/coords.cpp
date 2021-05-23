@@ -23,7 +23,7 @@ double Coords::getLon(AngleUnits angleUnit = radians)
 
 double Coords::getDistance(Coords a, Coords b, DistanceUnits distanceUnit = m)
 {
-  const int earthRadius = 6371000;
+  const int earthRadius = 6371000; 
  
   //This portion calculates the differences for the Radian latitudes and longitudes and saves them to variables
   double diffLon = b.getLon() - a.getLon();
